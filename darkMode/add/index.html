@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="left">
+            <a href="/darkMode/">
+                <ion-icon name="heart"></ion-icon>
+                <p>Logo</p>
+            </a>
+        </div>
+        <div class="right">
+            <div class="icon">
+                <a href="/darkMode/">
+                    <ion-icon name="heart"></ion-icon>
+                    <p>Самочувствие</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="/darkMode/doctor/">
+                    <ion-icon name="medkit"></ion-icon>
+                    <p>Врач</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="/darkMode/add/">
+                    <ion-icon name="add"></ion-icon>
+                    <p>Добавить</p>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="/darkMode/profile/">АБ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="container-add">
+        <div class="start" id="start">
+            <form action="">
+                <div class="big">
+                    <label>Жалоба</label>
+                    <input type="text" value="Есть симптомы" disabled>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="check-one">
+                    <label for="check-one"><ion-icon name="ellipse-outline"></ion-icon><ion-icon name="checkmark-circle-outline"></ion-icon><span>Чек бокс</span></label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="check-two">
+                    <label for="check-two"><ion-icon name="ellipse-outline"></ion-icon><ion-icon name="checkmark-circle-outline"></ion-icon><span>Чек бокс</span></label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="check-three">
+                    <label for="check-three"><ion-icon name="ellipse-outline"></ion-icon><ion-icon name="checkmark-circle-outline"></ion-icon><span>Чек бокс</span></label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="check-four">
+                    <label for="check-four"><ion-icon name="ellipse-outline"></ion-icon><ion-icon name="checkmark-circle-outline"></ion-icon><span>Чек бокс</span></label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="check-five">
+                    <label for="check-five"><ion-icon name="ellipse-outline"></ion-icon><ion-icon name="checkmark-circle-outline"></ion-icon><span>Чек бокс</span></label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="check-six">
+                    <label for="check-six"><ion-icon name="ellipse-outline"></ion-icon><ion-icon name="checkmark-circle-outline"></ion-icon><span>Чек бокс</span></label>
+                </div>
+                <input type="button" class="submit" id="button" value="Далее">
+            </form>
+        </div>
+        <div class="end" id="end">
+            <form action="">
+                <div class="big">
+                    <label>Температура</label>
+                    <input type="text" value="36.6">
+                </div>
+                <div class="big">
+                    <label>Пульс</label>
+                    <input type="text" value="100">
+                </div>
+                <div class="big">
+                    <label>Cатурация</label>
+                    <input type="text" value="0-100">
+                </div>
+                <div class="big">
+                    <label>Артериальное давление</label>
+                    <input type="text" value="50-220/40-130">
+                </div>
+                <input type="submit" class="submit" value="&#10004; Сохранить">
+            </form>
+        </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="back">
+        <a href="/darkMode/">
+            <ion-icon name="arrow-back-outline" class="back"></ion-icon>
+        </a>
+    </div>
+        
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const start = document.querySelector('#start')
+        const end = document.querySelector('#end')
+        const button = document.querySelector('#button')
+
+        button.addEventListener('click', function(){
+            start.style.display = 'none'
+            end.style.display = 'flex'
+        })
+    </script>
+</body>
+</html>

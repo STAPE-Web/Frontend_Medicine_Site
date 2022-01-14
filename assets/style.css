@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F5F6F8;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #EDEDF7;
+}
+header .left{
+    text-align: center;
+}
+header .left ion-icon, header .right .icon ion-icon{
+    font-size: 2.4vh;
+}
+header .left p, header .right .icon {
+    font-size: 1.6vh;
+}
+header .right{
+    display: flex;
+}
+header .right .icon{
+    text-align: center;
+    margin: 0 5vh;
+}
+header .right .profile{
+    width: 4.5vh;
+    height: 4.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCE0F9;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 2vh;
+    margin-left: 10vh;
+}
+header .left ion-icon, header .right .icon:nth-child(1) ion-icon{
+    background: #DCE0F9;
+    width: 5vh;
+    border-radius: 1.5vh;
+}
+header a{
+    color: #3F4249;
+    text-decoration: none;
+}
+.container{
+    margin-top: 15vh;
+    padding-bottom: 10vh;
+}
+.container img{
+    border-radius: 1.5vh;
+    width: 50vh;
+}
+.container .day{
+    border-left: 0.5vh solid #465C95;
+    padding: 0 0.5vh;
+    font-size: 3.6vh;
+    color: #1C1D1F;
+}
+.container div div img{
+    margin: 3vh;
+}
+.container.doc{
+    color: #1C1D1F;
+    font-size: 1.8vh;
+}
+.mobile-header{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    color: #1C1D1F;
+    font-size: 2.4vh;
+    font-weight: bold;
+}
+.mobile-header .profile{
+    width: 4.5vh;
+    height: 4.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCE0F9;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 2vh;
+    margin-left: 10vh;
+}
+.mobile-header a{
+    color: #1C1D1F;
+    text-decoration: none;
+}
+.add-mobile{
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    font-size: 3vh;
+    width: 4vh;
+    height: 4vh;
+    background: #465C95;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 1vh;
+    right: 5%;
+}
+.add-mobile a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1vh;
+}
+.doctors{
+    display: flex;
+    gap: 5vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 3vh;
+    background: #fff;
+    border-radius: 3vh;
+    padding: 3vh;
+    text-align: center;
+}
+.doctor div{
+    width: 7.5vh;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDEDF7;
+    border-radius: 100%;
+    font-size: 2.4vh;
+}
+.doctor p{
+    font-size: 2vh;
+    width: 20vh;
+    text-align: center;
+}
+.doctor ul li{
+    display: inline;
+    font-size: 2.4vh;
+    margin: 0 2vh;
+    color: #000;
+}
+.doctor ul a{
+    text-decoration: none;
+    color: #193268;
+}
+.back a{
+    display: none;
+    position: absolute;
+    top: 5%;
+    font-size: 4.8vh;
+    left: 3%;
+    color: #000;
+    text-decoration: none;
+}
+.container-pofile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+}
+.userImg{
+    width: 15vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCE0F9;
+    border-radius: 100%;
+    font-size: 4.8vh;
+}
+form{
+    width: 40vh;
+}
+form .big{
+    width: 100%;
+    margin: 2vh 0;
+    padding: 2vh 3vh;
+    background: #fff;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1vh;
+}
+form div.small{
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    grid-column-gap: 2vh;
+    grid-row-gap: 2vh;
+}
+form div.small div {
+    background: #fff;
+    padding: 2vh 3vh;
+}
+form input{
+    border: none;
+    font-size: 1.8vh;
+}
+form label{
+    font-size: 1.2vh;
+    color: #828D9A;
+}
+form .submit{
+    width: 100%;
+    background: #465C95;
+    padding: 2vh 0;
+    border-radius: 1vh;
+    color: #fff;
+    cursor: pointer;
+}
+
+.check label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 1vh;
+    font-size: 3.6vh;
+}
+.check input{
+    display: none;
+}
+.check label ion-icon:nth-child(1), label ion-icon:nth-child(2){
+    position: absolute;
+    color: #DCE0F9;
+}
+.check input:checked + label ion-icon:nth-child(1), label ion-icon:nth-child(2){
+   visibility: hidden;
+}
+.check input:checked + label ion-icon:nth-child(2), input:checked + label span{
+    visibility: visible;
+    color: #7CEDA9;
+}
+.check label span{
+    margin-left: 5vh;
+    color: #000;
+    user-select: none;
+    font-size: 1.8vh;
+}
+.container-add form .submit{
+    margin-top: 5vh;
+}
+#end{
+    display: none;
+}
+@media screen and (max-width: 850px) {
+    .container div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        position: fixed;
+        top:92%;
+    }
+    .mobile-header, .add-mobile, .back a{
+        display: flex;
+    }
+    header .right .profile, header .left, header .right .icon:nth-child(3){
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .container div div img{
+        width: 90%;
+    }
+}

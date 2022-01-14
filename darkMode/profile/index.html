@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="left">
+            <a href="/darkMode/">
+                <ion-icon name="heart"></ion-icon>
+                <p>Logo</p>
+            </a>
+        </div>
+        <div class="right">
+            <div class="icon">
+                <a href="/darkMode/">
+                    <ion-icon name="heart"></ion-icon>
+                    <p>Самочувствие</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="/darkMode/doctor/">
+                    <ion-icon name="medkit"></ion-icon>
+                    <p>Врач</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="/darkMode/add/">
+                    <ion-icon name="add"></ion-icon>
+                    <p>Добавить</p>
+                </a>
+            </div>
+            <div class="profile">
+                <a href="/darkMode/profile/">АБ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="container-pofile">
+        <div class="userImg">
+            АБ
+        </div>
+        <form action="">
+            <div class="big">
+                <label>ФИО</label>
+                <input type="text" value="Баранов Антон Алексеевич">
+            </div>
+            <div class="small">
+                <div>
+                    <label>Пол</label>
+                    <input type="text" value="Мужской">
+                </div>
+                <div>
+                    <label>Возраст</label>
+                    <input type="text" value="17">
+                </div>
+                <div>
+                    <label>Рост</label>
+                    <input type="text" value="166">
+                </div>
+                <div>
+                    <label>Вес</label>
+                    <input type="text" value="55.2">
+                </div>
+                <div>
+                    <label>Тест</label>
+                    <input type="text" value="Негативный">
+                </div>
+                <div>
+                    <label>Дата</label>
+                    <input type="date" value="2021-01-09">
+                </div>
+                <div>
+                    <label>Напоминание</label>
+                    <input type="text" value="20:00">
+                </div>
+                <div>
+                    <label>Заболевания</label>
+                    <input type="text" value="1">
+                </div>
+            </div>
+            <div class="big">
+                <label>Текущее местоположение</label>
+                <input type="text" value="Сириус, Ленина, дом 2, а/я 99">
+            </div>
+            <input type="submit" class="submit" value="&#10004; Сохранить">
+        </form>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="back">
+        <a href="/darkMode/">
+            <ion-icon name="arrow-back-outline" class="back"></ion-icon>
+        </a>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
